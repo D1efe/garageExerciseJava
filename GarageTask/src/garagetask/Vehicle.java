@@ -11,14 +11,16 @@ package garagetask;
  */
 public abstract class Vehicle {
 
-    String id;    
+    String id;
     String name;
     String engineSize;
 
-    @Override
-    public String toString() {
-        return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + '}';
+    public String getId() {
+        return id;
     }
-   
-}
 
+    public String getName() {
+        return name;
+
+    }
+}

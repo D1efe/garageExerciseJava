@@ -20,7 +20,10 @@ public class Garage {
         vehicleCollections.add(e = new Truck("T0001", "Albion Viking 24", "Medium", "Large", 2));
         vehicleCollections.add(f = new Truck("T0002", "Peugeot Boxer", "Medium", "Medium", 4));
 
-        addVehicle(vehicleCollections);
+        //addVehicle(vehicleCollections);
+        removeVehicle(vehicleCollections, "M0001");
+        removeVehicle(vehicleCollections, "M0002");
+        //emptyGarage(vehicleCollections);
 
         for (int x = 0; x < vehicleCollections.size(); x++) {
 
@@ -29,13 +32,13 @@ public class Garage {
 
             if (vehicleCollections.get(x) instanceof Car) {
                 bill = basePrice * 2;
-                System.out.println("The bill for this " + vehicleCollections.getClass() + " is: " + bill);
+                System.out.println("The bill for Car: " + vehicleCollections.get(x).getName() + " is " + bill);
             } else if (vehicleCollections.get(x) instanceof MotorCycle) {
                 bill = basePrice * 3;
-                System.out.println("The bill for this " + vehicleCollections.getClass() + " is: " + bill);
+                System.out.println("The bill for Motor Cycle: " + vehicleCollections.get(x).getName() + " is " + bill);
             } else if (vehicleCollections.get(x) instanceof Truck) {
                 bill = basePrice * 4;
-                System.out.println("The bill for this " + vehicleCollections.getClass() + " is: " + bill);
+                System.out.println("The bill for Truck: " + vehicleCollections.get(x).getName() + " is " + bill);
             }
 
         }
@@ -70,9 +73,24 @@ public class Garage {
         }
     }
 
-    public void removeVehicle() {
+    public static void removeVehicle(ArrayList<Vehicle> y, String a) {
 
+        for (int c = 0; c < y.size(); c++) {
+            if (y.get(c).id == a) {
+                y.remove(c);
+            }
+        }
     }
+
+    public static void emptyGarage(ArrayList<Vehicle> y) {
+
+        for (int c = 0; c < y.size(); c++) {
+            y.remove(c);
+            System.out.println("Vehicle: " + y.get(c).name + " has been removed");
+        }
+        System.out.println("There are no more vehicles in this garage");
+    }
+
 
     public void fixVehicle() {
 
@@ -82,3 +100,8 @@ public class Garage {
 
     }
 }
+    //casting - Tank myTank = (Tank)myTank - temporarily convert variable to datatype set in bracket
+    //downcasting a superclass to the type of a sub class - 
+    // class shape {} class Elippse extends Shape {}
+    // Shape s = method();
+    // Ellipse e = (Ellipse) s;

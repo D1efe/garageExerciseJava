@@ -23,8 +23,14 @@ public class Truck extends Vehicle {
         this.doors = doors;
 
     } 
+    
     public Truck() {
         
+    }
+    
+
+    public String toString() {
+        return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + "payLoad=" + payLoad + "doors=" + doors + '}';
     }
 
 }

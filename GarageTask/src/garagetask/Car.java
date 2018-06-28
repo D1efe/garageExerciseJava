@@ -25,6 +25,12 @@ public class Car extends Vehicle {
     }
 
     public Car() {
+        
+    }
+    
+
+    public String toString() {
+        return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + "bootSize=" + bootSize + "convertible=" + convertible + '}';
     }
     
 

@@ -23,9 +23,14 @@ public class MotorCycle extends Vehicle {
         this.colour = colour;
 
     }
-
-    
+  
     public MotorCycle() {
+        
+    }
+    
+
+    public String toString() {
+        return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + "sideCarAttachment=" + sideCarAttachment + "colour=" + colour + '}';
     }
     
 
