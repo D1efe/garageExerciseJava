@@ -24,4 +24,9 @@ public class MotorCycle extends Vehicle {
 
     }
 
-}
+    
+    public MotorCycle() {
+    }
+    
+
+} 

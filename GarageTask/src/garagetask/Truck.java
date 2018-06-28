@@ -11,10 +11,10 @@ package garagetask;
  */
 public class Truck extends Vehicle {
 
-    int payLoad;
+    String payLoad;
     int doors;
 
-    public Truck(String id, String name, String engineSize, int payLoad, int doors) {
+    public Truck(String id, String name, String engineSize, String payLoad, int doors) {
 
         this.id = id;
         this.name = name;
@@ -22,6 +22,9 @@ public class Truck extends Vehicle {
         this.payLoad = payLoad;
         this.doors = doors;
 
+    } 
+    public Truck() {
+        
     }
 
 }

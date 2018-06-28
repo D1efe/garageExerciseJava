@@ -14,5 +14,11 @@ public abstract class Vehicle {
     String id;    
     String name;
     String engineSize;
+
+    @Override
+    public String toString() {
+        return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + '}';
+    }
    
 }
+
