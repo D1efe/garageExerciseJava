@@ -1,33 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package garagetask;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author dan
- */
 public class Garage {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
-        Car a = new Car();
-        Car b = new Car();
-        MotorCycle c = new MotorCycle();
-        MotorCycle d = new MotorCycle();
-        Truck e = new Truck();
-        Truck f = new Truck();
+        Car a, b;
+        MotorCycle c, d;
+        Truck e, f;
 
-        ArrayList<Vehicle> carCollections = new ArrayList<>();
+        ArrayList<Vehicle> vehicleCollections = new ArrayList<>();
 
-        carCollections.add(e);
+        vehicleCollections.add(a = new Car("C0001", "Toyota", "Medium", "Large", true));
+        vehicleCollections.add(b = new Car("C0002", "Mercedes", "Large", "Small", true));
+        vehicleCollections.add(c = new MotorCycle());
+        vehicleCollections.add(d = new MotorCycle());
+        vehicleCollections.add(e = new Truck());
+        vehicleCollections.add(f = new Truck());
 
     }
 

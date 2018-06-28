@@ -14,25 +14,14 @@ public class Car extends Vehicle {
     String bootSize;
     Boolean convertible;
 
-    public Car() {
+    public Car(String id, String name, String engineSize, String bootSize, Boolean convertible) {
 
-        this.name = name;
         this.id = id;
-        this.engine = engine;
+        this.name = name;
+        this.engineSize = engineSize;
         this.bootSize = bootSize;
         this.convertible = convertible;
 
     }
-    public Car(String name, String id, Boolean engine, String bootSize, Boolean convertible) {
-
-        this.name = name;
-        this.id = id;
-        this.engine = engine;
-        this.bootSize = bootSize;
-        this.convertible = convertible;
-
-    }
-    
-    
 
 }

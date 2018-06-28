@@ -14,21 +14,11 @@ public class MotorCycle extends Vehicle {
     Boolean sideCarAttachment;
     String colour;
 
-    public MotorCycle() {
+    public MotorCycle(String id, String name, String engineSize, Boolean sideCarAttachment, String colour) {
 
-        this.name = name;
         this.id = id;
-        this.engine = engine;
-        this.sideCarAttachment = sideCarAttachment;
-        this.colour = colour;
-
-    }
-
-    public MotorCycle(String name, String id, Boolean engine, Boolean sideCarAttachment, String colour) {
-
         this.name = name;
-        this.id = id;
-        this.engine = engine;
+        this.engineSize = engineSize;
         this.sideCarAttachment = sideCarAttachment;
         this.colour = colour;
 

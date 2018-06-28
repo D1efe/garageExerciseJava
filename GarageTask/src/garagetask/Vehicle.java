@@ -11,8 +11,8 @@ package garagetask;
  */
 public abstract class Vehicle {
 
-    String name;
     String id;    
-    Boolean engine;
+    String name;
+    String engineSize;
    
 }
