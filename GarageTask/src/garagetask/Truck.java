@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package garagetask;
 
-/**
- *
- * @author dan
- */
 public class Truck extends Vehicle {
 
     String payLoad;
@@ -22,15 +13,31 @@ public class Truck extends Vehicle {
         this.payLoad = payLoad;
         this.doors = doors;
 
-    } 
-    
-    public Truck() {
-        
     }
-    
 
+    public Truck() {
+
+    }
+
+    @Override
     public String toString() {
         return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + "payLoad=" + payLoad + "doors=" + doors + '}';
+    }
+
+    public String getPayLoad() {
+        return payLoad;
+    }
+
+    public void setPayLoad(String payLoad) {
+        this.payLoad = payLoad;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public void setDoors(int doors) {
+        this.doors = doors;
     }
 
 }

@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package garagetask;
 
-/**
- *
- * @author dan
- */
 public class MotorCycle extends Vehicle {
 
     Boolean sideCarAttachment;
@@ -23,15 +14,30 @@ public class MotorCycle extends Vehicle {
         this.colour = colour;
 
     }
-  
-    public MotorCycle() {
-        
-    }
-    
 
+    public MotorCycle() {
+
+    }
+
+    @Override
     public String toString() {
         return "Vehicle{" + "id=" + id + ", name=" + name + ", engineSize=" + engineSize + "sideCarAttachment=" + sideCarAttachment + "colour=" + colour + '}';
     }
-    
 
-} 
+    public Boolean getSideCarAttachment() {
+        return sideCarAttachment;
+    }
+
+    public void setSideCarAttachment(Boolean sideCarAttachment) {
+        this.sideCarAttachment = sideCarAttachment;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
+    }
+
+}
